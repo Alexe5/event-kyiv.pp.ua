@@ -4,7 +4,6 @@ $('.form').on('submit', function(e) {
     let email = $('.form__field');
     let regex = /\S+@\S+\.\S+/;
     let result = regex.test( email.val() );
-    // console.log(result);
 
     if (result) {
         $.ajax({
@@ -15,10 +14,19 @@ $('.form').on('submit', function(e) {
         .done(function(response) {
             console.log(response);
         });
+    } else {
+        $(this).addClass('error');
     }
 });
 
+$('.form__field').on('focus', function() {
+    $('.form').removeClass('error');
+});
 
 $('.registration__btn').click(function() {
-    $('.form').slideToggle(500).css('display', 'flex');
+    let thisBtn = $(this);
+
+    $('.form').slideDown(500, function() {
+        thisBtn.slideUp(100);
+    }).css('display', 'flex');
 });

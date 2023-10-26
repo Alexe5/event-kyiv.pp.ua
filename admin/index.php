@@ -1,7 +1,7 @@
 <?php
 
 $conn = new PDO("mysql:host=localhost;dbname=event_kiev", "event_kiev", "HgZUhlZinyAy2VucOLuNY7rdkJrJh17e");
-$sql = "SELECT * FROM users;";
+$sql = "SELECT * FROM users ORDER BY email ASC;";
 $res = $conn->query($sql);
 
 while($row = $res->fetch(PDO::FETCH_ASSOC)){

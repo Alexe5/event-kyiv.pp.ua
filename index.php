@@ -15,16 +15,18 @@
     <main>
         <button class="registration__btn">реєстрація</button>
         <form class="form">
-        <label for="email">Вкажіть свій рабочий email</label>
-            <input type="text" name="email" class="form__field" placeholder="email">
-            <button type="submit" class="form__btn">Submit</button>
-            <span class="error">error</span>
+        <label for="form__field" class="form__label">
+            Вкажіть свій рабочий email
+            <input type="text" name="email" class="form__field" id="form__field" placeholder="email">
+            <span class="form__error"> Помилковий email</span>
+        </label>
+            <button type="submit" class="form__btn">зареєструватися</button>
         </form>
-        <button class="schedule__btn">розклад</button>
+        <button class="schedule__btn" onclick="window.location.href='#schedule-list'">розклад</button>
         <button class="wc__btn">wc</button> 
     </main>
-    <section class="schedule">  
-        <h2 class="title">розклад</h2>
+    <section class="schedule"> 
+        <h2 class="title" id="schedule-list">розклад</h2>
         <div class="schedule__items">
             <div class="schedule__item">
                 <span class="schedule__time">10:00 - 12:00</span>

@@ -18,17 +18,15 @@ try {
     }
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $email = trim($_POST['email']);
+        $email = strtolower(trim($_POST['email']));
         $regex = '/\S+@\S+\.\S+/';
 
         preg_match($regex, $email, $result);
         
         if ($result) {
-            // echo $email;
-
             foreach($users as $user) {
-                if ($user['email'] === $email) {
-                    $sql = "UPDATE users SET status = '1' WHERE email = '$email'";
+                if (strtolower($user['email']) === $email) {
+                    $sql = "UPDATE users SET status = 'OK' WHERE email = '$email'";
                     $res = $conn->query($sql);
 
                     echo 'success';
