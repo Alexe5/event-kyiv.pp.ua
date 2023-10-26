@@ -21,10 +21,10 @@
     <h1 class="title">Release Party</h1>
     <main>
         <button class="registration__btn">реєстрація</button>
-        <form class="form">
+        <form class="form" novalidate>
         <label for="form__field" class="form__label">
             Вкажіть свій рабочий email
-            <input type="text" name="email" class="form__field" id="form__field" placeholder="email">
+            <input type="email" name="email" class="form__field" id="form__field" placeholder="email">
             <span class="form__error"> Помилковий email</span>
         </label>
             <button type="submit" class="form__btn">зареєструватися</button>
