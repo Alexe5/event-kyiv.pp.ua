@@ -61,16 +61,6 @@ button {
     color: rgb(29, 207, 148);
     border: 1px solid rgb(29, 207, 148);
 }
-.wc__btn {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background-color: transparent;
-    text-transform: uppercase;
-    color: rgb(29, 207, 148);
-    border: 1px solid rgb(29, 207, 148);
-    font-size: 1.5rem;
-}
 .users {
     display: table;
     font-family: monospace;
@@ -167,6 +157,7 @@ h2.title {
     text-align: center;
     font-size: 2rem;
     text-transform: uppercase;
+    padding-top: 0.83em;
 }
 .schedule__items {
     display: flex;
