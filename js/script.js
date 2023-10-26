@@ -17,3 +17,8 @@ $('.form').on('submit', function(e) {
         });
     }
 });
+
+
+$('.registration__btn').click(function() {
+    $('.form').slideToggle(500).css('display', 'flex');
+});
