@@ -37,3 +37,21 @@ $('.popup__close, .popup__wrapper').on('click', function() {
     $('.popup').fadeOut(500);
 	$('body').css('overflow', 'auto');
 });
+
+
+$('.hole__btn').click(function() {
+    $('.img__wrap').css('display', 'block');
+});
+
+$('.close').click(function() {
+     $('.img__wrap').css('display', 'none');
+});
+
+
+$('.wc__btn').click(function() {
+    $('.img__wrap1').css('display', 'block');
+});
+
+$('.close').click(function() {
+     $('.img__wrap1').css('display', 'none');
+});

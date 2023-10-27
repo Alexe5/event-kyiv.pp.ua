@@ -20,6 +20,20 @@
     </div>
     <h1 class="title">Release Party</h1>
     <main>
+        <div class="img__wrap">
+            <div class="close">
+                <div class="close__item"></div>
+                <div class="close__item"></div>
+            </div>
+            <img src="images/hole.webp" alt="Схема Зала" class="holl__img">
+        </div>
+        <div class="img__wrap1">
+            <div class="close">
+                <div class="close__item"></div>
+                <div class="close__item"></div>
+            </div>
+            <img src="images/wc.jpg" alt="Схема Зала" class="holl__img">
+        </div>
         <button class="registration__btn">реєстрація</button>
         <form class="form" novalidate>
         <label for="form__field" class="form__label">
@@ -30,7 +44,7 @@
             <button type="submit" class="form__btn">зареєструватися</button>
         </form>
         <button class="schedule__btn" onclick="window.location.href='#schedule-list'">розклад</button>
-        <button class="wc__btn">схема залу</button>
+        <button class="hole__btn">схема залу</button>
         <button class="wc__btn">wc</button> 
     </main>
     <section class="schedule"> 
