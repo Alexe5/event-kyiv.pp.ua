@@ -25,14 +25,14 @@
                 <div class="close__item"></div>
                 <div class="close__item"></div>
             </div>
-            <img src="images/hole.webp" alt="Схема Зала" class="holl__img">
+            <img src="images/hole.webp" alt="Схема Зала" class="holl__img" loading="lazy">
         </div>
         <div class="img__wrap1">
             <div class="close">
                 <div class="close__item"></div>
                 <div class="close__item"></div>
             </div>
-            <img src="images/wc.jpg" alt="Схема Зала" class="holl__img">
+            <img src="images/wc.jpg" alt="Схема Зала" class="holl__img" loading="lazy">
         </div>
         <button class="registration__btn">реєстрація</button>
         <form class="form" novalidate>
