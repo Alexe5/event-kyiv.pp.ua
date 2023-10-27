@@ -30,6 +30,7 @@
             <button type="submit" class="form__btn">зареєструватися</button>
         </form>
         <button class="schedule__btn" onclick="window.location.href='#schedule-list'">розклад</button>
+        <button class="wc__btn">схема залу</button>
         <button class="wc__btn">wc</button> 
     </main>
     <section class="schedule"> 
@@ -45,22 +46,22 @@
             </div>
             <div class="schedule__item">
                 <span class="schedule__time">12:30 - 13:10</span>
-                <h4 class="schedule__name">M.Melnyk, P.Suslov, A.Gavrilov</h4>
+                <h4 class="schedule__name">Melnyk M. Suslov P. Gavrilov A.</h4>
                 <span class="schedule__them">Тема: Device block.</span>
             </div>
             <div class="schedule__item">
                 <span class="schedule__time">13:10 - 13:30</span>
-                <h4 class="schedule__name">B.Kupchenko</h4>
+                <h4 class="schedule__name">Kupchenko B.</h4>
                 <span class="schedule__them">Тема: Fibra block</span>
             </div>
             <div class="schedule__item">
                 <span class="schedule__time">13:30 - 13:50</span>
-                <h4 class="schedule__name">G.Stanislavskyi</h4>
+                <h4 class="schedule__name">Stanislavskyi G.</h4>
                 <span class="schedule__them">Тема: Fire block</span>
             </div>
             <div class="schedule__item">
                 <span class="schedule__time">13:50 - 14:10</span>
-                <h4 class="schedule__name">T.Pentsak</h4>
+                <h4 class="schedule__name">Pentsak T.</h4>
                 <span class="schedule__them">Тема: BA block.</span>
             </div>
             <div class="schedule__item">
@@ -70,27 +71,27 @@
             </div>
             <div class="schedule__item">
                 <span class="schedule__time">14:30 - 15:00</span>
-                <h4 class="schedule__name">O.Kiyashko, M.Horban</h4>
+                <h4 class="schedule__name">Kiyashko O. Horban M.</h4>
                 <span class="schedule__them">Тема: Video block.</span>
             </div>
             <div class="schedule__item">
                 <span class="schedule__time">15:00 - 15:20</span>
-                <h4 class="schedule__name">A.Guda</h4>
+                <h4 class="schedule__name">Guda A.</h4>
                 <span class="schedule__them">Тема: PM/Portfolio block.</span>
             </div>
             <div class="schedule__item">
                 <span class="schedule__time">15:20 - 16:20</span>
-                <h4 class="schedule__name">O.Berezianskyi, Y.Surovsky, O.Kaminskyi, V.Sahan</h4>
+                <h4 class="schedule__name">Berezianskyi O. Surovsky Y. Kaminskyi O. Sahan V.</h4>
                 <span class="schedule__them">Тема: System block</span>
             </div>
             <div class="schedule__item">
                 <span class="schedule__time">16:20 - 16:40</span>
-                <h4 class="schedule__name">V.Steblyk</h4>
+                <h4 class="schedule__name">Steblyk V.</h4>
                 <span class="schedule__them">Тема: QA block</span>
             </div>
             <div class="schedule__item">
                 <span class="schedule__time">16:40 - 17:00</span>
-                <h4 class="schedule__name">A.Oleinyk</h4>
+                <h4 class="schedule__name">Oleinyk A.</h4>
                 <span class="schedule__them">Automation block</span>
             </div>
             <div class="schedule__item">
@@ -100,17 +101,17 @@
             </div>
             <div class="schedule__item">
                 <span class="schedule__time">17:20 - 17:40</span>
-                <h4 class="schedule__name">B.Demchyshyn</h4>
+                <h4 class="schedule__name">Demchyshyn B.</h4>
                 <span class="schedule__them">Тема: Production block</span>
             </div>
             <div class="schedule__item">
                 <span class="schedule__time">17:40 - 18:00</span>
-                <h4 class="schedule__name">O.Astron</h4>
+                <h4 class="schedule__name">Astron O.</h4>
                 <span class="schedule__them">Тема: Product design block</span>
             </div>
             <div class="schedule__item">
                 <span class="schedule__time">18:00 - 18:20</span>
-                <h4 class="schedule__name">V.Hrytsenko</h4>
+                <h4 class="schedule__name">Hrytsenko V.</h4>
                 <span class="schedule__them">Тема: Marketing block.</span>
             </div>
             <div class="schedule__item">
@@ -125,6 +126,16 @@
             </div>
         </div>
     </section>
+    <div class="popup">
+        <div class="popup__wrapper"></div>
+        <div class="popup__window">
+            <div class="popup__close"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="none"><rect width="32" height="2" x="14.414" y="13" fill="#fff" rx="1" transform="rotate(45 14.414 13)"></rect><rect width="32" height="2" x="13.414" y="36" fill="#fff" rx="1" transform="rotate(-45 13.414 36)"></rect></svg></div>
+            <div class="popup__symbol popup__symbol_check">&check;</div>
+            <div class="popup__symbol popup__symbol_cross">&cross;</div>
+            <p class="popup__text popup__text_success">Дякуємо за реєстрацію!</p>
+            <p class="popup__text popup__text_failure">Зверніться до адміністратора</p>
+        </div>
+    </div>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/script.js"></script>
 </body>

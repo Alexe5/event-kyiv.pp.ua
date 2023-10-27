@@ -12,7 +12,9 @@ $('.form').on('submit', function(e) {
             data: $(this).serialize()
         })
         .done(function(response) {
-            console.log(response);
+            $('.popup').addClass(response).fadeToggle(500);
+            $('.form').slideUp();
+            $('body').css('overflow', 'hidden');
         });
     } else {
         $(this).addClass('error');
@@ -29,4 +31,9 @@ $('.registration__btn').click(function() {
     $('.form').slideDown(500, function() {
         thisBtn.slideUp(100);
     }).css('display', 'flex');
+});
+
+$('.popup__close, .popup__wrapper').on('click', function() {
+    $('.popup').fadeOut(500);
+	$('body').css('overflow', 'auto');
 });

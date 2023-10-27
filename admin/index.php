@@ -1,7 +1,7 @@
 <?php
 
 $conn = new PDO("mysql:host=localhost;dbname=event_kiev", "event_kiev", "HgZUhlZinyAy2VucOLuNY7rdkJrJh17e");
-$sql = "SELECT * FROM users ORDER BY email ASC;";
+$sql = "SELECT * FROM users ORDER BY status DESC, email ASC;";
 $res = $conn->query($sql);
 
 while($row = $res->fetch(PDO::FETCH_ASSOC)){
@@ -31,7 +31,7 @@ while($row = $res->fetch(PDO::FETCH_ASSOC)){
             <div class="users__cell">ID</div>
             <div class="users__cell">Name</div>
             <div class="users__cell">Email</div>
-            <div class="users__cell">Status</div>
+            <div class="users__cell"><span class="pc">Status</span><span class="mob">S</span></div>
         </div>
 
         <?php foreach($users as $user) { ?>
